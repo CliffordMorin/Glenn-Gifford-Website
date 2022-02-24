@@ -78,9 +78,14 @@ const Nav = () => {
               }}
             >
               {navlinks.map((item) => (
-                <MenuItem key={item.page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{item.page}</Typography>
-                </MenuItem>
+                <Link
+                  to={item.link}
+                  style={{ textDecoration: "none", color: "unset" }}
+                >
+                  <MenuItem key={item.page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{item.page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -94,7 +99,10 @@ const Nav = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {navlinks.map((item) => (
-              <Link to={item.link}>
+              <Link
+                to={item.link}
+                style={{ textDecoration: "none", color: "unset" }}
+              >
                 <Button
                   key={item.page}
                   onClick={handleCloseNavMenu}
