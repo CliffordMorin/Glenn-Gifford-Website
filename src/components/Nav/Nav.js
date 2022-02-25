@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import useStyles from "./styles";
 
 const navlinks = [
   { page: "Home", link: "/" },
@@ -21,8 +22,6 @@ const navlinks = [
   { page: "Calender", link: "/calender" },
   { page: "Contact", link: "/contact" },
 ];
-const pages = ["Home", "Bio", "Teaching", "Media", "Calender", "Contact"];
-const links = ["/", "/bio", "/teaching", "/media", "/calender", "contact"];
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -35,8 +34,10 @@ const Nav = () => {
     setAnchorElNav(null);
   };
 
+  const classes = useStyles();
+
   return (
-    <AppBar position="static">
+    <AppBar className={classes.appBar} color="secondary" position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

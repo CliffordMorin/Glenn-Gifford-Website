@@ -7,19 +7,23 @@ import Contact from "./components/Contact/Contact";
 import Media from "./components/Media/Media";
 import Calender from "./components/Calender/Calender";
 import Nav from "./components/Nav/Nav";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./colorpalette";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/bio" element={<Bio />} />
-        <Route path="/teaching" element={<Teaching />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/media" element={<Media />} />
-        <Route path="/calender" element={<Calender />} />
-      </Routes>
+      <ThemeProvider theme={theme}>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bio" element={<Bio />} />
+          <Route path="/teaching" element={<Teaching />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/media" element={<Media />} />
+          <Route path="/calender" element={<Calender />} />
+        </Routes>
+      </ThemeProvider>
     </>
   );
 }
