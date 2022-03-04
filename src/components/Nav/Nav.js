@@ -11,7 +11,11 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+
 import { Link } from "react-router-dom";
+
+import Bounce from "react-reveal/Bounce";
+
 import useStyles from "./styles";
 
 const navlinks = [
@@ -40,14 +44,18 @@ const Nav = () => {
     <AppBar className={classes.appBar} color="secondary" position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-          >
-            GLENN GIFFORD
-          </Typography>
+          <Link to="/" style={{ textDecoration: "none", color: "unset" }}>
+            <Typography
+              variant="h5"
+              noWrap
+              component="div"
+              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            >
+              <Bounce left cascade>
+                GLENNDON GIFFORD MUSIC
+              </Bounce>
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -91,12 +99,14 @@ const Nav = () => {
             </Menu>
           </Box>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            GLENNDON GIFFORD
+            <Bounce left cascade>
+              GLENNDON GIFFORD MUSIC
+            </Bounce>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {navlinks.map((item) => (
@@ -109,7 +119,7 @@ const Nav = () => {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {item.page}
+                  <Typography variant="h7">{item.page}</Typography>
                 </Button>
               </Link>
             ))}

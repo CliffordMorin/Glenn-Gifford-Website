@@ -1,5 +1,3 @@
 import { makeStyles } from "@mui/styles";
 
-export default makeStyles((theme) => ({
-  appBar: {},
-}));
+export default makeStyles((theme) => ({}));
