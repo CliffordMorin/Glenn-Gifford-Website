@@ -15,6 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
 import Bounce from "react-reveal/Bounce";
+import Zoom from "react-reveal/Zoom";
 
 import useStyles from "./styles";
 
@@ -92,7 +93,13 @@ const Nav = () => {
                   style={{ textDecoration: "none", color: "unset" }}
                 >
                   <MenuItem key={item.page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{item.page}</Typography>
+                    <Typography
+                      variant="h5"
+                      textAlign="center"
+                      sx={{ color: "#fff" }}
+                    >
+                      {item.page}
+                    </Typography>
                   </MenuItem>
                 </Link>
               ))}
@@ -119,7 +126,11 @@ const Nav = () => {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  <Typography variant="h7">{item.page}</Typography>
+                  <Typography variant="h7">
+                    <Zoom top cascade>
+                      {item.page}
+                    </Zoom>
+                  </Typography>
                 </Button>
               </Link>
             ))}

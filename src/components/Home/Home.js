@@ -12,14 +12,25 @@ const Home = () => {
       <Grow in>
         <Container fixed>
           <Paper elevation={10}>
-            <Typography variant="h3" align="center" mt={7} py={4} gutterBottom>
+            <Typography
+              variant="h3"
+              align="center"
+              className={classes.text}
+              mt={7}
+              py={4}
+              gutterBottom
+            >
               <Roll left cascade>
                 Biography
               </Roll>
             </Typography>
             <Grid container rowSpacing={2} columnSpacing={3}>
               <Grid item xs={12} md={6}>
-                <Typography variant="body1" align="center">
+                <Typography
+                  variant="body1"
+                  align="center"
+                  className={classes.text}
+                >
                   {" "}
                   Veniam ad velit qui reprehenderit elit. Officia dolor dolor
                   velit nostrud proident esse ex sit eu mollit dolore id. In
@@ -52,7 +63,11 @@ const Home = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Typography variant="body1" align="center">
+                <Typography
+                  variant="body1"
+                  align="center"
+                  className={classes.text}
+                >
                   {" "}
                   Veniam ad velit qui reprehenderit elit. Officia dolor dolor
                   velit nostrud proident esse ex sit eu mollit dolore id. In

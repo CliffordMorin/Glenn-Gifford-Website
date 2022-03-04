@@ -2,6 +2,6 @@ import { makeStyles } from "@mui/styles";
 
 export default makeStyles((theme) => ({
   app: {
-    backgroundColor: "grey",
+    backgroundColor: "#DA0502",
   },
 }));
