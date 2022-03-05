@@ -7,5 +7,10 @@ export default makeStyles((theme) => ({
   },
   text: {
     color: "#fff",
+    padding: "20px",
+  },
+  image: {
+    width: "auto",
+    height: "100vh",
   },
 }));
