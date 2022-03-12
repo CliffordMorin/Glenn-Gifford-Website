@@ -12,7 +12,7 @@ const Home = () => {
       <img className={classes.images} src={glenn1} alt="glenn home" />
       <Grow in>
         <Container fixed>
-          <Paper elevation={10}>
+          <Paper elevation={16}>
             <Typography
               variant="h3"
               align="center"

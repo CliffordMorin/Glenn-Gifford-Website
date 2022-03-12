@@ -9,22 +9,34 @@ const theme = createTheme({
       main: "#000000",
     },
     background: {
-      paper: "#000000",
+      paper: "#111111",
       default: "#630E0D",
     },
   },
   typography: {
-    h5: {
-      fontFamily: ["Henny Penny", "cursive"].join(","),
-    },
-    h3: {
-      fontFamily: ["Henny Penny", "cursive"].join(","),
-    },
     h8: {
       fontFamily: ["Merriweather", "serif"].join(","),
+      color: "white",
     },
     h7: {
       fontFamily: ["Roboto Serif", "serif"].join(","),
+      color: "white",
+    },
+    h6: {
+      fontFamily: ["Merriweather", "serif"].join(","),
+      color: "white",
+    },
+    h5: {
+      fontFamily: ["Henny Penny", "cursive"].join(","),
+      color: "white",
+    },
+    h4: {
+      fontFamily: ["Merriweather", "serif"].join(","),
+      color: "white",
+    },
+    h3: {
+      fontFamily: ["Henny Penny", "cursive"].join(","),
+      color: "white",
     },
   },
 });
