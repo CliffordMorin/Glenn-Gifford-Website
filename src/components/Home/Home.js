@@ -30,7 +30,11 @@ const Home = () => {
                 <img className={classes.images} src={glenn2} alt="glenn" />
               </Grid>
               <Grid item xs={12} md={6}>
-                <Typography variant="body1" className={classes.text}>
+                <Typography
+                  variant="body1"
+                  align="center"
+                  className={classes.text}
+                >
                   {" "}
                   Veniam ad velit qui reprehenderit elit. Officia dolor dolor
                   velit nostrud proident esse ex sit eu mollit dolore id. In

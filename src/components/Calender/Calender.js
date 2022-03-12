@@ -24,18 +24,18 @@ let band = [
   "The Morning After Band",
 ];
 let date = [
-  "Friday, September 16 @ 9:00PM",
-  "Saturday, September 3 @ 9:00PM",
-  "Thursday, August 4 @ 9:00PM",
-  "Saturday, July 16 @ 9:00PM",
-  "Friday, July 8 @ 9:00PM",
-  "Thursday, June 16 @ 9:00PM",
-  "Friday, June 3 @ 9:00PM",
-  "Sunday, May 29 @ 9:00PM",
-  "Friday, April 8 @ 9:00PM",
-  "Saturday, March 26 @ 9:00PM",
-  "Friday, March 25 @ 9:00PM",
-  "Saturday, March 19 @ 9:00PM",
+  "Friday, September 16, 2022 @ 9:00PM",
+  "Saturday, September 3, 2022 @ 9:00PM",
+  "Thursday, August 4, 2022 @ 9:00PM",
+  "Saturday, July 16, 2022 @ 9:00PM",
+  "Friday, July 8, 2022 @ 9:00PM",
+  "Thursday, June 16, 2022 @ 9:00PM",
+  "Friday, June 3, 2022 @ 9:00PM",
+  "Sunday, May 29, 2022 @ 9:00PM",
+  "Friday, April 8, 2022 @ 9:00PM",
+  "Saturday, March 26, 2022 @ 9:00PM",
+  "Friday, March 25, 2022 @ 9:00PM",
+  "Saturday, March 19, 2022 @ 9:00PM",
 ];
 let location = [
   "Hard Rock Cafe, Atlantic City, NJ",
@@ -63,52 +63,70 @@ const Calender = () => {
   });
 
   return (
-    <Container sx={{ mt: 7 }}>
-      <Typography variant="h4" align="center" sx={{ pb: 6 }}>
+    <div>
+      <Typography variant="h3" align="center" sx={{ mt: 5 }}>
         Upcoming Shows
       </Typography>
-      <Paper elevation={16}>
-        <Grid container spacing={{ xs: 2, md: 3 }} sx={{ pb: 2, pl: 7 }}>
-          <Grid item xs={6} sm={6} md={4}>
-            <Typography variant="h6"> Event </Typography>
+      <Container sx={{ mt: 7 }}>
+        <Paper elevation={16}>
+          <Grid container spacing={{ xs: 2, md: 3 }} sx={{ pb: 2, pl: 5 }}>
+            <Grid item xs={6} sm={6} md={4}>
+              <Typography variant="h5"> Event </Typography>
+            </Grid>
+            <Grid item xs={6} sm={6} md={4}>
+              <Typography variant="h5"> Date </Typography>
+            </Grid>
+            <Grid item xs={6} sm={6} md={4}>
+              <Typography
+                variant="h5"
+                sx={{ display: { xs: "none", sm: "none", md: "block" } }}
+              >
+                {" "}
+                Location{" "}
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <Typography variant="h6"> Date </Typography>
-          </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <Typography
-              variant="h6"
-              sx={{ display: { xs: "none", sm: "none", md: "block" } }}
-            >
-              {" "}
-              Location{" "}
-            </Typography>
-          </Grid>
-        </Grid>
-        <Divider style={{ backgroundColor: "white" }} />
+          <Divider style={{ backgroundColor: "white" }} />
 
-        {events.map((i) => {
-          return (
-            <>
-              <Grid container spacing={{ xs: 2, md: 3 }} sx={{ py: 3, pl: 7 }}>
-                <Grid item xs={6} sm={6} md={4}>
-                  <Typography variant="h8">{i.band}</Typography>
+          {events.map((i) => {
+            let currDate = new Date();
+            let date = new Date(i.date.split("@")[0]);
+            let lineThrough;
+            if (currDate > date) {
+              lineThrough = { textDecoration: "line-through" };
+            } else {
+              lineThrough = null;
+            }
+            return (
+              <div key={i.id}>
+                <Grid
+                  container
+                  spacing={{ xs: 2, md: 3 }}
+                  sx={{ py: 3, pl: 5, pr: 5 }}
+                  style={lineThrough}
+                >
+                  <Grid item xs={6} sm={6} md={4}>
+                    <Typography variant="h8">{i.band}</Typography>
+                  </Grid>
+                  <Grid item xs={6} sm={6} md={4}>
+                    <Typography variant="h8">{i.date}</Typography>
+                  </Grid>
+                  <Grid item xs={6} sm={6} md={4}>
+                    <Typography variant="h8">{i.location}</Typography>
+                  </Grid>
                 </Grid>
-                <Grid item xs={6} sm={6} md={4}>
-                  <Typography variant="h8">{i.date}</Typography>
-                </Grid>
-                <Grid item xs={6} sm={6} md={4}>
-                  <Typography variant="h8">{i.location}</Typography>
-                </Grid>
-              </Grid>
-              <Divider variant="middle" style={{ backgroundColor: "white" }} />
-            </>
-          );
-        })}
+                <Divider
+                  variant="middle"
+                  style={{ backgroundColor: "white" }}
+                />
+              </div>
+            );
+          })}
 
-        <Divider />
-      </Paper>
-    </Container>
+          <Divider />
+        </Paper>
+      </Container>
+    </div>
   );
 };
 

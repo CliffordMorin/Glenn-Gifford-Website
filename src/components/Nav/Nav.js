@@ -20,12 +20,12 @@ import Zoom from "react-reveal/Zoom";
 import useStyles from "./styles";
 
 const navlinks = [
-  { page: "Home", link: "/" },
-  { page: "Bio", link: "/bio" },
-  { page: "Teaching", link: "/teaching" },
-  { page: "Media", link: "/media" },
-  { page: "Calender", link: "/calender" },
-  { page: "Contact", link: "/contact" },
+  { page: "Home", link: "/", id: 0 },
+  { page: "Bio", link: "/bio", id: 1 },
+  { page: "Teaching", link: "/teaching", id: 2 },
+  { page: "Media", link: "/media", id: 3 },
+  { page: "Calender", link: "/calender", id: 4 },
+  { page: "Contact", link: "/contact", id: 5 },
 ];
 
 const Nav = () => {
@@ -91,6 +91,7 @@ const Nav = () => {
                 <Link
                   to={item.link}
                   style={{ textDecoration: "none", color: "unset" }}
+                  key={item.id}
                 >
                   <MenuItem key={item.page} onClick={handleCloseNavMenu}>
                     <Typography
@@ -106,7 +107,7 @@ const Nav = () => {
             </Menu>
           </Box>
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
@@ -120,6 +121,7 @@ const Nav = () => {
               <Link
                 to={item.link}
                 style={{ textDecoration: "none", color: "unset" }}
+                key={item.id}
               >
                 <Button
                   key={item.page}
