@@ -14,11 +14,11 @@ const Contact = () => {
   const classes = makeStyles();
   return (
     <div>
-      <Typography sx={{ mt: 5 }} variant="h3" align="center">
-        Contact
-      </Typography>
-      <Container sx={{ mt: 5 }}>
-        <Paper elevation={16} sx={{ pt: 5, pl: 5, pb: 10 }}>
+      <Container align="center" sx={{ mt: 5 }}>
+        <Paper elevation={16} sx={{ p: 5 }}>
+          <Typography sx={{ pb: 5 }} variant="h3" align="center">
+            Contact
+          </Typography>
           <Typography variant="body1">
             Glenndon Gifford is available as a lead trumpet player, soloist,
             sideman, and trumpet player of The Morning After Band, Available for
