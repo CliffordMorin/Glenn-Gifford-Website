@@ -14,32 +14,41 @@ const Footer = () => {
       <Box>
         <Container
           align="center"
-          sx={{ backgroundColor: "primary.main", height: "100px" }}
+          sx={{
+            backgroundColor: "secondary.main",
+            height: "100px",
+            mt: 5,
+          }}
           maxWidth
         >
           <Box>
-            <Grid container columnSpacing={5}>
-              <Grid item>
-                {/* <Instagram htmlColor="" fontSize="large" /> */}
-                <FontAwesomeIcon icon={faInstagram} className="fa-2x insta" />
-              </Grid>
-              <Grid item>
-                <YouTube htmlColor="#FF0000" fontSize="large" />
-              </Grid>
-              <Grid item>
-                <Facebook htmlColor="#4267B2" fontSize="large" />
-              </Grid>
-              <Grid item>
-                <FontAwesomeIcon
-                  icon={faSoundcloud}
-                  className="fa-2x"
-                  style={{ color: "#FF7700" }}
-                />
-              </Grid>
-            </Grid>
+            {/* <Instagram htmlColor="" fontSize="large" /> */}
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="fa-2x insta"
+              style={{ margin: "10px 10px 15px 10px" }}
+            />
+
+            <YouTube
+              htmlColor="#FF0000"
+              fontSize="large"
+              style={{ margin: "10px" }}
+            />
+
+            <Facebook
+              htmlColor="#4267B2"
+              fontSize="large"
+              style={{ margin: "10px" }}
+            />
+
+            <FontAwesomeIcon
+              icon={faSoundcloud}
+              className="fa-2x"
+              style={{ color: "#FF7700", margin: "10px" }}
+            />
           </Box>
           <Box>
-            <Typography variant="h8">
+            <Typography variant="h9">
               Made with <Favorite fontSize="small" color="error" /> by{" "}
               <a
                 href="https://www.cliffordmorinmusic.com/"

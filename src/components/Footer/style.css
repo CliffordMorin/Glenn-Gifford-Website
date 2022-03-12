@@ -1,7 +1,8 @@
 .insta {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
+  display: inline-block;
+  border-radius: 15%;
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
