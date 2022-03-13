@@ -2,7 +2,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  border-radius: 15%;
+  border-radius: 25%;
+  padding: 2px 5px 2px 5px;
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,

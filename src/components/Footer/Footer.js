@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Typography, Grid } from "@mui/material";
+import { Container, Box, Typography, Grid, Link } from "@mui/material";
 import { Instagram, YouTube, Facebook, Favorite } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
@@ -10,60 +10,85 @@ const Footer = () => {
   const classes = makeStyles();
   let date = new Date();
   return (
-    <footer>
-      <Box>
-        <Container
-          align="center"
-          sx={{
-            backgroundColor: "secondary.main",
-            height: "100px",
-            mt: 5,
-          }}
-          maxWidth
-        >
-          <Box>
-            {/* <Instagram htmlColor="" fontSize="large" /> */}
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="fa-2x insta"
-              style={{ margin: "10px 10px 15px 10px" }}
-            />
-
-            <YouTube
-              htmlColor="#FF0000"
-              fontSize="large"
-              style={{ margin: "10px" }}
-            />
-
-            <Facebook
-              htmlColor="#4267B2"
-              fontSize="large"
-              style={{ margin: "10px" }}
-            />
-
-            <FontAwesomeIcon
-              icon={faSoundcloud}
-              className="fa-2x"
-              style={{ color: "#FF7700", margin: "10px" }}
-            />
-          </Box>
-          <Box>
-            <Typography variant="h9">
-              Made with <Favorite fontSize="small" color="error" /> by{" "}
+    <div>
+      <footer>
+        <Box>
+          <Container
+            align="center"
+            sx={{
+              backgroundColor: "secondary.main",
+              mt: 5,
+            }}
+            maxWidth
+          >
+            <Box mb={1} pt={2}>
               <a
-                href="https://www.cliffordmorinmusic.com/"
+                href="https://www.instagram.com/glenndon.gifford/?hl=en"
                 target="_blank"
                 rel="noreferrer"
-                className={classes.link}
+                style={{ color: "#ffffff" }}
               >
-                Clifford Morin
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="fa-2xl insta"
+                  style={{ margin: "5px 10px 16px 10px" }}
+                />
               </a>
-              {` ${date.getFullYear()}`}
-            </Typography>
-          </Box>
-        </Container>
-      </Box>
-    </footer>
+
+              <a
+                href="https://www.youtube.com/user/TheGiffswing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <YouTube
+                  htmlColor="#FF0000"
+                  fontSize="large"
+                  style={{ margin: "5px 10px" }}
+                />
+              </a>
+
+              <a
+                href="https://www.facebook.com/Glenn.Gifford"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Facebook
+                  htmlColor="#4267B2"
+                  fontSize="large"
+                  style={{ margin: "5px 10px" }}
+                />
+              </a>
+
+              <a
+                href="https://soundcloud.com/glenndon-gifford"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faSoundcloud}
+                  className="fa-2x"
+                  style={{ color: "#FF7700", margin: "5px 10px" }}
+                />
+              </a>
+            </Box>
+            <Box>
+              <Typography variant="h9">
+                Made with <Favorite fontSize="small" color="error" /> by{" "}
+                <a
+                  href="https://www.cliffordmorinmusic.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={classes.link}
+                >
+                  Clifford Morin
+                </a>
+                {` ${date.getFullYear()}`}
+              </Typography>
+            </Box>
+          </Container>
+        </Box>
+      </footer>
+    </div>
   );
 };
 
