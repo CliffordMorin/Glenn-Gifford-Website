@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,8 +12,13 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
+import song from "../../audio/come-out.wav";
 import { Link } from "react-router-dom";
 
+//icons
+import { PlayArrow, Pause } from "@mui/icons-material";
+
+//animation
 import Bounce from "react-reveal/Bounce";
 import Zoom from "react-reveal/Zoom";
 
@@ -30,6 +35,9 @@ const navlinks = [
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audio = new Audio(song);
+  const audioRef = useRef(audio);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -40,6 +48,17 @@ const Nav = () => {
   };
 
   const classes = useStyles();
+
+  const playPause = (e) => {
+    if (isPlaying) {
+      audioRef.current.pause();
+      console.log("pause");
+      setIsPlaying(!isPlaying);
+    } else {
+      audioRef.current.play();
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   return (
     <AppBar className={classes.appBar} color="secondary" position="sticky">
@@ -53,12 +72,17 @@ const Nav = () => {
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
               <Bounce left cascade>
-                GLENNDON GIFFORD MUSIC
+                GLENNDON GIFFORD
               </Bounce>
             </Typography>
           </Link>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -106,6 +130,7 @@ const Nav = () => {
               ))}
             </Menu>
           </Box>
+
           <Typography
             variant="h6"
             noWrap
@@ -113,9 +138,10 @@ const Nav = () => {
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
             <Bounce left cascade>
-              GLENNDON GIFFORD MUSIC
+              GLENNDON GIFFORD
             </Bounce>
           </Typography>
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {navlinks.map((item) => (
               <Link
@@ -137,6 +163,19 @@ const Nav = () => {
               </Link>
             ))}
           </Box>
+          <IconButton
+            color="warning"
+            size="medium"
+            variant="contained"
+            aria-label="play/ pause"
+            onClick={(e) => playPause()}
+          >
+            {isPlaying ? (
+              <Pause fontSize="large" />
+            ) : (
+              <PlayArrow fontSize="large" />
+            )}
+          </IconButton>
         </Toolbar>
       </Container>
     </AppBar>

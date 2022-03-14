@@ -7,11 +7,7 @@ import glenn2 from "../../images/glenn2.jpg";
 
 const Home = () => {
   const classes = makeStyles();
-  return (
-    <div>
-      <img className={classes.images} src={glenn1} alt="glenn home" />
-    </div>
-  );
+  return <div className={classes.container}></div>;
 };
 
 export default Home;
