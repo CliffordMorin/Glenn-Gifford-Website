@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Box, Typography, Grid, Link } from "@mui/material";
-import { Instagram, YouTube, Facebook, Favorite } from "@mui/icons-material";
+import { Container, Box, Typography } from "@mui/material";
+import { YouTube, Facebook, Favorite } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
 import makeStyles from "./styles";

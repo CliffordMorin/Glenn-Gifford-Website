@@ -7,9 +7,9 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
+
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
+
 import MenuItem from "@mui/material/MenuItem";
 
 import song from "../../audio/come-out.wav";
@@ -19,8 +19,6 @@ import { Link } from "react-router-dom";
 import { PlayArrow, Pause } from "@mui/icons-material";
 
 //animation
-import Bounce from "react-reveal/Bounce";
-import Zoom from "react-reveal/Zoom";
 
 import useStyles from "./styles";
 

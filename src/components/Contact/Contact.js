@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Typography,
-  Container,
-  Grid,
-  Paper,
-  Divider,
-} from "@mui/material";
+import { Typography, Container, Paper } from "@mui/material";
 import head from "../../images/head.jpg";
 import Roll from "react-reveal/Roll";
 import makeStyles from "./styles";

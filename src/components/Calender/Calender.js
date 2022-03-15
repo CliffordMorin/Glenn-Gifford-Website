@@ -1,12 +1,5 @@
-import { React, useEffect } from "react";
-import {
-  Button,
-  Typography,
-  Container,
-  Grid,
-  Paper,
-  Divider,
-} from "@mui/material";
+import { React } from "react";
+import { Typography, Container, Grid, Paper, Divider } from "@mui/material";
 import Roll from "react-reveal/Roll";
 
 let ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
