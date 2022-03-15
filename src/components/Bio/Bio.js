@@ -13,7 +13,7 @@ const Bio = () => {
         <Container sx={{ mt: 5 }}>
           <Paper elevation={16} sx={{ pb: 5 }}>
             <Typography
-              variant="h3"
+              variant="h2"
               align="center"
               className={classes.text}
               py={4}

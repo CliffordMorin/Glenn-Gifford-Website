@@ -30,7 +30,7 @@ let theme = createTheme({
       color: "white",
     },
     h5: {
-      fontFamily: ["Henny Penny", "cursive"].join(","),
+      fontFamily: ["Amatic SC", "cursive"].join(","),
       color: "white",
     },
     h4: {
@@ -38,7 +38,15 @@ let theme = createTheme({
       color: "white",
     },
     h3: {
-      fontFamily: ["Henny Penny", "cursive"].join(","),
+      fontFamily: ["Amatic SC", "cursive"].join(","),
+      color: "white",
+    },
+    h2: {
+      fontFamily: ["Amatic SC", "cursive"].join(","),
+      color: "white",
+    },
+    h1: {
+      fontFamily: ["Amatic SC", "cursive"].join(","),
       color: "white",
     },
   },

@@ -8,8 +8,8 @@ const Teaching = () => {
   const classes = makeStyles();
   return (
     <Container align="center" sx={{ mt: 5 }}>
-      <Paper elevation={16} sx={{ p: 5 }}>
-        <Typography sx={{ pb: 5 }} variant="h3" align="center">
+      <Paper elevation={16} sx={{ py: 5, px: 1 }}>
+        <Typography sx={{ pb: 5 }} variant="h2" align="center">
           <Roll left cascade>
             Teaching
           </Roll>
@@ -24,7 +24,7 @@ const Teaching = () => {
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="body1" align="center" p={2}>
+            <Typography variant="body1" align="center" py={2}>
               As a experienced performer and arranger, Glenndon is always
               looking for opportunities to share his knowledge and passion for
               music. Fluent in functional Piano, Trumpet, Vocals music theory,
@@ -47,12 +47,12 @@ const Teaching = () => {
               </a>
               .
             </Typography>
-            <Typography variant="body1" align="center" p={2}>
+            <Typography variant="body1" align="center" py={2}>
               Lesson Rates: $1,000,000 an hour in person, $750,000 45 min
               lesson, $500,000 30 min lesson. Also available for online remote/
               virtual lessons.
             </Typography>
-            <Typography variant="body1" align="center" p={2}>
+            <Typography variant="body1" align="center" py={2}>
               Cancelation Policy: Please send an email or phone call within
               24hrs of your scheduled lesson in case of an emergency or need to
               cancel your lesson. This gives Glenndon time to adjust his

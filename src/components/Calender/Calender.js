@@ -58,7 +58,7 @@ const Calender = () => {
 
   return (
     <div>
-      <Typography variant="h3" align="center" sx={{ mt: 5 }}>
+      <Typography variant="h2" align="center" sx={{ mt: 5 }}>
         <Roll left cascade>
           Upcoming Shows
         </Roll>

@@ -14,14 +14,14 @@ export default makeStyles((theme) => ({
     height: "100vh",
 
     [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "-780px",
+      backgroundPosition: "60%",
     },
   },
   textContainer: {
-    paddingTop: "25%",
+    paddingTop: "20%",
 
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "10%",
+      paddingTop: "5%",
       width: "56%",
     },
   },

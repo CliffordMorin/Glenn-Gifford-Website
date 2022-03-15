@@ -9,8 +9,8 @@ const Contact = () => {
   return (
     <div>
       <Container align="center" sx={{ mt: 5 }}>
-        <Paper elevation={16} sx={{ p: 5 }}>
-          <Typography sx={{ pb: 5 }} variant="h3" align="center">
+        <Paper elevation={16} sx={{ py: 5, px: 1 }}>
+          <Typography sx={{ pb: 5 }} variant="h2" align="center">
             <Roll left cascade>
               Contact
             </Roll>

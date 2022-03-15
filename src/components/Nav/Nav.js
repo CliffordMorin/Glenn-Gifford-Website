@@ -63,7 +63,7 @@ const Nav = () => {
         <Toolbar disableGutters>
           <Link to="/" style={{ textDecoration: "none", color: "unset" }}>
             <Typography
-              variant="h5"
+              variant="h3"
               noWrap
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
@@ -127,7 +127,7 @@ const Nav = () => {
           </Box>
 
           <Typography
-            variant="h6"
+            variant="h3"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
