@@ -12,8 +12,17 @@ export default makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "100vh",
+
     [theme.breakpoints.down("sm")]: {
       backgroundPosition: "-780px",
+    },
+  },
+  textContainer: {
+    paddingTop: "25%",
+
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: "10%",
+      width: "56%",
     },
   },
 }));

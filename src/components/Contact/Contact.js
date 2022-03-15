@@ -8,6 +8,7 @@ import {
   Divider,
 } from "@mui/material";
 import head from "../../images/head.jpg";
+import Roll from "react-reveal/Roll";
 import makeStyles from "./styles";
 
 const Contact = () => {
@@ -17,7 +18,9 @@ const Contact = () => {
       <Container align="center" sx={{ mt: 5 }}>
         <Paper elevation={16} sx={{ p: 5 }}>
           <Typography sx={{ pb: 5 }} variant="h3" align="center">
-            Contact
+            <Roll left cascade>
+              Contact
+            </Roll>
           </Typography>
           <Typography variant="body1">
             Glenndon Gifford is available as a lead trumpet player, soloist,

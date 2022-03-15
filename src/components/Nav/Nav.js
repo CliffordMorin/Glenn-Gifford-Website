@@ -52,7 +52,6 @@ const Nav = () => {
   const playPause = (e) => {
     if (isPlaying) {
       audioRef.current.pause();
-      console.log("pause");
       setIsPlaying(!isPlaying);
     } else {
       audioRef.current.play();
@@ -71,9 +70,7 @@ const Nav = () => {
               component="div"
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
-              <Bounce left cascade>
-                GLENNDON GIFFORD
-              </Bounce>
+              GLENNDON GIFFORD
             </Typography>
           </Link>
 
@@ -137,9 +134,7 @@ const Nav = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            <Bounce left cascade>
-              GLENNDON GIFFORD
-            </Bounce>
+            GLENNDON GIFFORD
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -154,11 +149,7 @@ const Nav = () => {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  <Typography variant="h7">
-                    <Zoom top cascade>
-                      {item.page}
-                    </Zoom>
-                  </Typography>
+                  <Typography variant="h7">{item.page}</Typography>
                 </Button>
               </Link>
             ))}

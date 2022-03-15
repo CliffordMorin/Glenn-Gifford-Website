@@ -7,6 +7,7 @@ import {
   Paper,
   Divider,
 } from "@mui/material";
+import Roll from "react-reveal/Roll";
 
 let ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let band = [
@@ -65,7 +66,9 @@ const Calender = () => {
   return (
     <div>
       <Typography variant="h3" align="center" sx={{ mt: 5 }}>
-        Upcoming Shows
+        <Roll left cascade>
+          Upcoming Shows
+        </Roll>
       </Typography>
       <Container sx={{ mt: 7 }}>
         <Paper elevation={16}>
