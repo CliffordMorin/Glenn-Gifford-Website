@@ -18,7 +18,7 @@ const Teaching = () => {
         <Grid container rowSpacing={2} columnSpacing={3}>
           <Grid item xs={12} md={6}>
             <img
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "100%", height: "auto" }}
               src={teaching}
               alt="glenn"
             />
@@ -51,6 +51,14 @@ const Teaching = () => {
               Lesson Rates: $1,000,000 an hour in person, $750,000 45 min
               lesson, $500,000 30 min lesson. Also available for online remote/
               virtual lessons.
+            </Typography>
+            <Typography variant="body1" align="center" p={2}>
+              Cancelation Policy: Please send an email or phone call within
+              24hrs of your scheduled lesson in case of an emergency or need to
+              cancel your lesson. This gives Glenndon time to adjust his
+              schedule if necessary. There will be a $25 cancelation fee added
+              to your next lesson should you fail to notify Glenndon during this
+              window of time.
             </Typography>
           </Grid>
         </Grid>
