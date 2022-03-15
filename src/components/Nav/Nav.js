@@ -16,7 +16,7 @@ import song from "../../audio/come-out.wav";
 import { Link } from "react-router-dom";
 
 //icons
-import { PlayArrow, Pause } from "@mui/icons-material";
+import { PlayCircle, PauseCircle } from "@mui/icons-material";
 
 //animation
 
@@ -160,9 +160,9 @@ const Nav = () => {
             onClick={(e) => playPause()}
           >
             {isPlaying ? (
-              <Pause fontSize="large" />
+              <PauseCircle fontSize="large" />
             ) : (
-              <PlayArrow fontSize="large" />
+              <PlayCircle fontSize="large" />
             )}
           </IconButton>
         </Toolbar>

@@ -8,6 +8,7 @@ import Media from "./components/Media/Media";
 import Calender from "./components/Calender/Calender";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+import Page404 from "./components/404/Page404";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./colorpalette";
 import { CssBaseline } from "@mui/material";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/media" element={<Media />} />
           <Route path="/calender" element={<Calender />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
       </ThemeProvider>
