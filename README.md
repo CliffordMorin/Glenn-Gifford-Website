@@ -1,71 +1,77 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Glenn-Gifford-Website
+
+</br>
+<p align="center">
+    <img src="https://img.shields.io/github/languages/count/CliffordMorin/Glenn-Gifford-Website?style=plastic" alt="Languages" />
+    <img src="https://img.shields.io/github/languages/top/CliffordMorin/Glenn-Gifford-Website?style=plastic&labelColor=yellow" alt="Top Language" />
+    <img src="https://img.shields.io/github/languages/code-size/CliffordMorin/Glenn-Gifford-Website?style=plastic" alt="Code Size" />
+    <img src="https://img.shields.io/github/repo-size/CliffordMorin/Glenn-Gifford-Website?style=plastic" alt="Repo Size" />   
+    <img src="https://img.shields.io/tokei/lines/github/CliffordMorin/Glenn-Gifford-Website?style=plastic" alt="Total Lines" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/Glenn-Gifford-Website/react?style=plastic" alt="React Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/Glenn-Gifford-Website/material-ui?style=plastic" alt="Material UI Version" />
+     <img src="https://img.shields.io/github/package-json/dependency-version/CliffordMorin/Glenn-Gifford-Website/react-router-dom?style=plastic" alt="react-router-dom Version" />
+    <img src="https://img.shields.io/github/last-commit/CliffordMorin/Glenn-Gifford-Website?style=plastic" alt="Last Commit" />  
+    <img src="https://img.shields.io/github/issues/CliffordMorin/Glenn-Gifford-Website?style=plastic" alt="Issues" />  
+    <img src="https://img.shields.io/github/followers/CliffordMorin?style=social" alt="Followers" />  
+</p>
+
+[![MIT](https://img.shields.io/badge/license-MIT-green?style=plastic)](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
+
+## Description
+
+This application is a functional professional musician website I built for a client. Some of the technologies I used are React, JS, and mainly Material-UI. The goal of this website was to build it from scratch using Material-UI to really understand how to use it effectively.
+
+## User Story
+
+```
+As a professional musician I want to view a slick, mobile first musician website where I can view my info such as Biography, teaching info/rates, media(such as videos, photos, and recordings), and contact information.
+```
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Mobile View](#mobile-view)
+- [Links](#links)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+- [Contributions](#contributions)
+- [Questions](#questions)
+
+## Usage
+
+![Demo](public/thumb.png)
+
+## Mobile View
+
+![Demo](src/images/mobile.png)
+
+## Links
+
+- Netlify demo site link: (https://musing-archimedes-c4ef25.netlify.app/)
+- Github Repository URL: (https://github.com/CliffordMorin/Glenn-Gifford-Website)
+
+## Technologies Used
+
+<p align="center">
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-blue?style=for-the-badge" alt="CSS" /></a>
+    <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/-Javascript-yellow?style=for-the-badge" alt="Javascript" /></a>
+    <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/-React-blue?style=for-the-badge" alt="React" /></a>
+     <a href="https://mui.com/"><img src="https://img.shields.io/badge/-Material%20UI-blue?style=for-the-badge" alt="Material UI" /></a>
+      <a href="https://reactrouter.com/web/guides/quick-start"><img src="https://img.shields.io/badge/-React%20Router%20Dom-teal?style=for-the-badge" alt="React Router Dom" /></a>
+      <a href="https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react"><img src="https://img.shields.io/badge/-React%20Font%20Awesome-blue?style=for-the-badge" alt="React Font Awesome" /></a>
+</p>
+
+## License
+
+[![MIT](https://img.shields.io/badge/license-MIT-green?style=plastic)](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
+
+## Contributions
+
+Fork, request, or contact me.
+
+## Questions
+
+[![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/CliffordMorin)
+[![LinkedIn](https://img.shields.io/badge/My%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/morin-clifford-129888a9/)
+
+Feel free to reach me at cemorin21@gmail.com with any question regarding this project!
