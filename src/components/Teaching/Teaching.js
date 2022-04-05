@@ -24,19 +24,35 @@ const Teaching = () => {
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="body1" align="center" py={2}>
-              As a experienced performer and arranger, Glenndon is always
-              looking for opportunities to share his knowledge and passion for
-              music. Fluent in functional Piano, Trumpet, Vocals music theory,
-              jazz theory and arranging. Glenndon is able to provide a flexible
-              learning experience tailored to each student’s wants and needs.
-              Glenndon is currently accepting students of all ages for beginner
-              to intermediate Piano and Vocal lessons as well as Beginner to
-              Advanced Trumpet, Jazz/ Classical theory, composition, and
-              arranging. He is primarily teaching out of his home in Long
-              Island, NY. But, is willing to travel to neighboring towns for a
-              travel fee. Please send an email with your contact information for
-              any lesson inquiries to{" "}
+            <Typography variant="body1" align="left" py={2}>
+              Having been guided by many wonderful teachers and musicians in his
+              life, Glenndon understands how important a mentor can be in the
+              life of a young person and artist. 
+            </Typography>
+            <Typography variant="body1" align="left" py={2}>
+              For fifteen years, he's been playing that supportive and engaging
+              role for students as they develop their passions for music and the
+              arts, whether they are brand new to the field or a comeback
+              player.  He works together with each student to create an
+              individualized plan that evolves based on goals, interests, tastes
+              in music, needs, and accomplishments. Basic trumpet fundamentals,
+              advanced audition repertoire, production and recording techniques,
+              appreciation for the history and lineage of Black American Music,
+              and the music theory derived from its' ancestors, are just some of
+              the many topics that students have the opportunity to explore
+              together with Glenndon.
+            </Typography>
+            <Typography variant="body1" align="left" py={2}>
+              Additionally, he often works together with students' school music
+              teachers to coordinate workshops for ensembles and brass sections,
+              helping students to develop a deeper appreciation and skill level
+              for the compositions they are working on.
+            </Typography>
+            <Typography variant="body1" align="left" py={2}>
+              He is primarily teaching out of his home in Long Island, NY. But,
+              is willing to travel to neighboring towns for a travel fee. Please
+              send an email with your contact information for any lesson
+              inquiries to{" "}
               <a
                 className={classes.mail}
                 href="mailto:glenndon.gifford@gmail.com"
@@ -47,11 +63,17 @@ const Teaching = () => {
               </a>
               .
             </Typography>
-            <Typography variant="body1" align="center" py={2}>
-              Lesson Rates: $1,000,000 an hour in person, $750,000 45 min
-              lesson, $500,000 30 min lesson. Also available for online remote/
-              virtual lessons.
+
+            <Typography variant="body1" align="left" py={2}>
+              Teaching Rates:
+              <ul>
+                <li>Half hour - $40</li>
+                <li>One hour - $75</li>
+                <li> 5 x One hour lessons - $350 (special deal)</li>
+                <li>Also available for online remote/ virtual lessons.</li>
+              </ul>
             </Typography>
+
             <Typography variant="body1" align="center" py={2}>
               Cancelation Policy: Please send an email or phone call within
               24hrs of your scheduled lesson in case of an emergency or need to

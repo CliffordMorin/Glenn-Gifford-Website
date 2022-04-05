@@ -36,34 +36,36 @@ const Bio = () => {
                   p={2}
                 >
                   {" "}
-                  Veniam ad velit qui reprehenderit elit. Officia dolor dolor
-                  velit nostrud proident esse ex sit eu mollit dolore id. In
-                  velit aliquip esse eiusmod. Aliquip amet nostrud quis dolore
-                  ex sit ea ut. Exercitation ex incididunt anim exercitation
-                  dolor nulla laboris aliquip ullamco. Ad ullamco aute ex aliqua
-                  consectetur veniam non magna. Non magna deserunt exercitation
-                  labore sunt mollit exercitation ut fugiat laboris quis mollit.
-                  Id officia ullamco elit aliquip aliquip magna veniam
-                  consectetur cupidatat reprehenderit sunt adipisicing. Amet
-                  consectetur incididunt aliquip ut non est cupidatat culpa duis
-                  pariatur duis. Reprehenderit ipsum esse ipsum dolor laboris
-                  magna tempor adipisicing. In nostrud deserunt ut duis. Duis
-                  labore magna ea aliquip aute reprehenderit culpa. Dolor
-                  consequat velit pariatur aliqua quis tempor do labore
-                  reprehenderit eiusmod duis pariatur exercitation pariatur.
-                  Duis laborum sint laborum est pariatur duis ad labore
-                  incididunt irure. Eiusmod sint esse consequat consectetur
-                  reprehenderit commodo velit mollit eu ad. Reprehenderit sint
-                  eu magna exercitation nulla culpa incididunt. Sit sint velit
-                  non nulla nulla. Eiusmod do consequat ut velit cupidatat.
-                  Officia nostrud ut dolor cupidatat amet fugiat consectetur
-                  labore esse incididunt amet non velit. In ex sint ad id.
-                  Fugiat officia laborum labore nulla ipsum deserunt ullamco
-                  esse pariatur sit nostrud. Nisi ad minim cupidatat adipisicing
-                  anim labore. Deserunt ipsum aliquip laborum elit culpa esse
-                  ipsum tempor mollit mollit ut dolore amet nulla. Esse labore
-                  aliqua minim cillum in commodo ullamco pariatur cupidatat ea
-                  quis ullamco.
+                  Glenndon Gifford is a musician, composer, producer, and
+                  educator from Long Island, New York. He performs in various
+                  styles of music across the Northeast, from Salsa and event
+                  bands to brass quartets and Jazz trios. Though his primary
+                  instrument is trumpet, he also performs on piano and vocals. 
+                </Typography>
+                <Typography
+                  variant="body1"
+                  align="center"
+                  className={classes.text}
+                  p={2}
+                >
+                  {" "}
+                  Glenndon holds a Bachelors of Music in Jazz Studies from
+                  Temple University's Boyer College of Music and Dance. He has
+                  been fortunate enough to have been mentored by some of the
+                  great trumpet players and musicians of our time, including
+                  Terell Stafford, John Swana, Rodney Marsalis, Nick Marchione,
+                  Tanya Darby, Mike Natale, and Leon Petruzzi. 
+                </Typography>
+                <Typography
+                  variant="body1"
+                  align="center"
+                  className={classes.text}
+                  p={2}
+                >
+                  {" "}
+                  He currently performs regularly with The Morning After (event
+                  band based in South NJ), The Latin Express (salsa band based
+                  in Philadelphia), and his solo project under his own name. 
                 </Typography>
               </Grid>
             </Grid>
