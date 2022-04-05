@@ -46,13 +46,8 @@ const Teaching = () => {
               Additionally, he often works together with students' school music
               teachers to coordinate workshops for ensembles and brass sections,
               helping students to develop a deeper appreciation and skill level
-              for the compositions they are working on.
-            </Typography>
-            <Typography variant="body1" align="left" py={2}>
-              He is primarily teaching out of his home in Long Island, NY. But,
-              is willing to travel to neighboring towns for a travel fee. Please
-              send an email with your contact information for any lesson
-              inquiries to{" "}
+              for the compositions they are working on. Please send an email
+              with your contact information for any teaching inquiries to{" "}
               <a
                 className={classes.mail}
                 href="mailto:glenndon.gifford@gmail.com"
@@ -63,7 +58,6 @@ const Teaching = () => {
               </a>
               .
             </Typography>
-
             <Typography variant="body1" align="left" py={2}>
               Teaching Rates:
               <ul>
