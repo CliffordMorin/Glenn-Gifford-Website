@@ -47,7 +47,7 @@ As a professional musician I want to view a slick, mobile first musician website
 
 ## Links
 
-- Netlify demo site link: (https://musing-archimedes-c4ef25.netlify.app/)
+- Netlify demo site link: (https://www.glenndongifford.com/)
 - Github Repository URL: (https://github.com/CliffordMorin/Glenn-Gifford-Website)
 
 ## Technologies Used
