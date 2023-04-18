@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Grow, Paper, Typography, Grid } from "@mui/material";
+import {
+  Container,
+  Grow,
+  Paper,
+  Typography,
+  Grid,
+  Divider,
+} from "@mui/material";
 
 import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
@@ -21,17 +28,25 @@ const Bio = () => {
       </Helmet>
       <Grow in>
         <Container sx={{ my: 5 }}>
-          <Paper elevation={16} sx={{ pb: 5 }}>
+          <Paper elevation={16} sx={{ py: 5 }}>
             <Typography
               variant="h2"
               align="center"
               className={classes.text}
-              py={4}
-              pt={5}
               gutterBottom
             >
               <Rollin text="Biography" />
             </Typography>
+            <Divider
+              sx={{
+                zIndex: "100",
+                backgroundColor: "text.primary",
+                height: "2px",
+                width: "200px",
+                margin: "auto",
+                my: 4,
+              }}
+            />
             <Grid container rowSpacing={2} columnSpacing={3}>
               <Grid item xs={12} md={6}>
                 <img className={classes.images} src={glenn2} alt="glenn" />

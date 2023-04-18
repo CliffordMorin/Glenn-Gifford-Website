@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Paper, Container, Grid } from "@mui/material";
+import { Typography, Paper, Container, Grid, Divider } from "@mui/material";
 import Rollin from "../Animations/Rollin";
 import teaching from "../../images/kids.jpg";
 import { Helmet } from "react-helmet-async";
@@ -18,10 +18,19 @@ const Teaching = () => {
         <link rel="canonical" href="/teaching" />
       </Helmet>
       <Paper elevation={16} sx={{ py: 5, px: 1 }}>
-        <Typography sx={{ pb: 5 }} variant="h2" align="center">
+        <Typography variant="h2" align="center">
           <Rollin text="Teaching" />
         </Typography>
-
+        <Divider
+          sx={{
+            zIndex: "100",
+            backgroundColor: "text.primary",
+            height: "2px",
+            width: "200px",
+            margin: "auto",
+            my: 4,
+          }}
+        />
         <Grid container rowSpacing={2} columnSpacing={3}>
           <Grid item xs={12} md={6}>
             <img

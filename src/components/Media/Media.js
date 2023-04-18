@@ -10,7 +10,7 @@ import head2 from "../../images/head2.jpg";
 import head3 from "../../images/head3.jpg";
 import head4 from "../../images/head4.jpg";
 import makeStyles from "./styles";
-import { Container, Typography } from "@mui/material";
+import { Container, Typography, Divider } from "@mui/material";
 import Rollin from "../Animations/Rollin";
 import { Helmet } from "react-helmet-async";
 import "./Media.css";
@@ -69,6 +69,16 @@ const Media = () => {
       <Typography align="center" variant="h2" sx={{ my: 5 }}>
         <Rollin text="Media" />
       </Typography>
+      <Divider
+        sx={{
+          zIndex: "100",
+          backgroundColor: "text.primary",
+          height: "2px",
+          width: "200px",
+          margin: "auto",
+          my: 4,
+        }}
+      />
       <Container sx={{ mt: 5 }}>
         <ImageGallery items={images} />
         <Container sx={{ mt: 5, mb: 5 }}>

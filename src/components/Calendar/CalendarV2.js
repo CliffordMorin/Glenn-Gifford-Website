@@ -68,9 +68,9 @@ const CalendarV2 = () => {
           zIndex: "100",
           backgroundColor: theme.palette.text.primary,
           height: "2px",
-          width: "100px",
+          width: "200px",
           margin: "auto",
-          mb: 5,
+          my: 4,
         }}
       />
       <Container sx={{ mt: 7, mb: 7 }}>

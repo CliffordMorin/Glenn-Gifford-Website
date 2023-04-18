@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Container, Paper } from "@mui/material";
+import { Typography, Container, Paper, Divider } from "@mui/material";
 import head from "../../images/head.jpg";
 import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
@@ -19,9 +19,19 @@ const Contact = () => {
       </Helmet>
       <Container align="center" sx={{ my: 5 }}>
         <Paper elevation={16} sx={{ py: 5, px: 1 }}>
-          <Typography sx={{ pb: 5 }} variant="h2" align="center">
+          <Typography variant="h2" align="center">
             <Rollin text="Contact" />
           </Typography>
+          <Divider
+            sx={{
+              zIndex: "100",
+              backgroundColor: "text.primary",
+              height: "2px",
+              width: "200px",
+              margin: "auto",
+              my: 4,
+            }}
+          />
           <Typography variant="body1">
             Glenndon Gifford is available as a lead trumpet player, soloist,
             sideman, and trumpet player of The Morning After Band, Available for
