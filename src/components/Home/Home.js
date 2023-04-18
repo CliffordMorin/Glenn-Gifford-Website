@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className={classes.container}>
       <Helmet>
-        <title>Glenndon Gifford | Home</title>
+        <title>Home | Glenndon Gifford</title>
         <meta name="description" content="Glenndon Gifford's Home Page" />
         <link rel="canonical" href="/" />
       </Helmet>

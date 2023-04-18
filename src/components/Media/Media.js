@@ -59,7 +59,7 @@ const Media = () => {
   return (
     <div>
       <Helmet>
-        <title>Glenndon Gifford | Media</title>
+        <title>Media | Glenndon Gifford</title>
         <meta
           name="description"
           content="Glenndon Gifford's Media Page with pictures, videos and recordings of glenndon performing."

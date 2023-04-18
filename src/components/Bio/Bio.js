@@ -18,7 +18,7 @@ const Bio = () => {
   return (
     <div>
       <Helmet>
-        <title>Glenndon Gifford | Biography</title>
+        <title>Biography | Glenndon Gifford</title>
         <meta
           name="description"
           content=" Glenndon Gifford is a musician, composer, producer, and

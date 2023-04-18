@@ -53,7 +53,7 @@ const CalendarV2 = () => {
   return (
     <div>
       <Helmet>
-        <title>Glenndon Gifford | Calendar</title>
+        <title>Calendar | Glenndon Gifford</title>
         <meta
           name="description"
           content="Glenndon Gifford Calendar with dates of upcoming shows, concerts and public events."

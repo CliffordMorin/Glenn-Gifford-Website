@@ -10,7 +10,7 @@ const Teaching = () => {
   return (
     <Container align="center" sx={{ my: 5 }}>
       <Helmet>
-        <title>Glenndon Gifford | Teaching</title>
+        <title>Teaching | Glenndon Gifford</title>
         <meta
           name="description"
           content="Glenndon Gifford's teaching page, where you can learn more about Glenndon's teaching philosophy and how he can help you or your child learn to play the trumpet."

@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-        <title>Glenndon Gifford | Contact</title>
+        <title>Contact | Glenndon Gifford</title>
         <meta
           name="description"
           content="Contact form to get in contact with Glenndon Gifford regarding any Inquiries."
