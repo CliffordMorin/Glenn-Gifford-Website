@@ -46,7 +46,7 @@ let location = [
   "Hard Rock Cafe, Atlantic City, NJ",
 ];
 
-const Calender = () => {
+const Calendar = () => {
   let events = ids.map((id, i) => {
     return {
       id: id,
@@ -126,4 +126,4 @@ const Calender = () => {
   );
 };
 
-export default Calender;
+export default Calendar;

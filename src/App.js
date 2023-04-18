@@ -5,7 +5,8 @@ import Bio from "./components/Bio/Bio";
 import Teaching from "./components/Teaching/Teaching";
 import Contact from "./components/Contact/Contact";
 import Media from "./components/Media/Media";
-import Calender from "./components/Calender/Calender";
+// import Calendar from "./components/Calendar/Calendar";
+import CalendarV2 from "./components/Calendar/CalendarV2";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import Page404 from "./components/404/Page404";
@@ -25,7 +26,7 @@ function App() {
           <Route path="/teaching" element={<Teaching />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/calender" element={<Calender />} />
+          <Route path="/calendar" element={<CalendarV2 />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />

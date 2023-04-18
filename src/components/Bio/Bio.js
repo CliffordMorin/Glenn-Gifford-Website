@@ -10,7 +10,7 @@ const Bio = () => {
   return (
     <div>
       <Grow in>
-        <Container sx={{ mt: 5 }}>
+        <Container sx={{ my: 5 }}>
           <Paper elevation={16} sx={{ pb: 5 }}>
             <Typography
               variant="h2"

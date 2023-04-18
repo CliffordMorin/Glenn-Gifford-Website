@@ -8,7 +8,7 @@ const Contact = () => {
   const classes = makeStyles();
   return (
     <div>
-      <Container align="center" sx={{ mt: 5 }}>
+      <Container align="center" sx={{ my: 5 }}>
         <Paper elevation={16} sx={{ py: 5, px: 1 }}>
           <Typography sx={{ pb: 5 }} variant="h2" align="center">
             <Roll left cascade>

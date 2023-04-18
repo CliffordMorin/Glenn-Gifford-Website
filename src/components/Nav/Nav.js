@@ -27,7 +27,7 @@ const navlinks = [
   { page: "Bio", link: "/bio", id: 1 },
   { page: "Teaching", link: "/teaching", id: 2 },
   { page: "Media", link: "/media", id: 3 },
-  { page: "Calender", link: "/calender", id: 4 },
+  { page: "Calendar", link: "/calendar", id: 4 },
   { page: "Contact", link: "/contact", id: 5 },
 ];
 

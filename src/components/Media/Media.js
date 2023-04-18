@@ -57,7 +57,7 @@ const Media = () => {
   const classes = makeStyles();
   return (
     <div>
-      <Typography align="center" variant="h2" sx={{ mt: 5 }}>
+      <Typography align="center" variant="h2" sx={{ my: 5 }}>
         <Roll left cascade>
           Media
         </Roll>
