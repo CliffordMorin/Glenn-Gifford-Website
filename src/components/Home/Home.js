@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography } from "@mui/material";
 
-import Roll from "react-reveal/Roll";
+import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
 
 const Home = () => {
@@ -10,24 +10,16 @@ const Home = () => {
     <div className={classes.container}>
       <Container className={classes.textContainer}>
         <Typography variant="h1">
-          <Roll left cascade>
-            GLENNDON
-          </Roll>
+          <Rollin text="GLENNDON" delay={0} />
         </Typography>
         <Typography variant="h1" sx={{ marginBottom: "20px" }}>
-          <Roll delay={500} left cascade>
-            GIFFORD
-          </Roll>
+          <Rollin text="GIFFORD" delay={500} />
         </Typography>
         <Typography variant="h3">
-          <Roll delay={1000} left cascade>
-            Trumpeter, Teacher,
-          </Roll>
+          <Rollin text="Trumpeter, Teacher," delay={1000} />
         </Typography>
         <Typography variant="h3">
-          <Roll delay={1500} left cascade>
-            Vocalist and Arranger
-          </Roll>
+          <Rollin text="Vocalist and Arranger" delay={1500} />
         </Typography>
       </Container>
     </div>

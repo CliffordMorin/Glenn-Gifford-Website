@@ -1,6 +1,6 @@
 import { React } from "react";
 import { Typography, Container, Grid, Paper, Divider } from "@mui/material";
-import Roll from "react-reveal/Roll";
+import Rollin from "../Animations/Rollin";
 
 let ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let band = [
@@ -59,9 +59,7 @@ const Calendar = () => {
   return (
     <div>
       <Typography variant="h2" align="center" sx={{ mt: 5 }}>
-        <Roll left cascade>
-          Upcoming Shows
-        </Roll>
+        <Rollin text="Upcoming Shows" />
       </Typography>
       <Container sx={{ mt: 7 }}>
         <Paper elevation={16}>

@@ -11,7 +11,7 @@ import head3 from "../../images/head3.jpg";
 import head4 from "../../images/head4.jpg";
 import makeStyles from "./styles";
 import { Container, Typography } from "@mui/material";
-import Roll from "react-reveal/Roll";
+import Rollin from "../Animations/Rollin";
 import "./Media.css";
 
 const images = [
@@ -58,9 +58,7 @@ const Media = () => {
   return (
     <div>
       <Typography align="center" variant="h2" sx={{ my: 5 }}>
-        <Roll left cascade>
-          Media
-        </Roll>
+        <Rollin text="Media" />
       </Typography>
       <Container sx={{ mt: 5 }}>
         <ImageGallery items={images} />

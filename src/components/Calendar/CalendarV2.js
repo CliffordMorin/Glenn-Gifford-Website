@@ -7,7 +7,7 @@ import {
   Divider,
   Link,
 } from "@mui/material";
-import { Roll } from "react-reveal";
+import Rollin from "../Animations/Rollin";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 import { SiBandsintown } from "react-icons/si";
@@ -61,9 +61,7 @@ const CalendarV2 = () => {
         <link rel="canonical" href="/calendar" />
       </Helmet>
       <Typography variant="h2" align="center" sx={{ mt: 5 }}>
-        <Roll left cascade>
-          Upcoming Shows
-        </Roll>
+        <Rollin text="Upcoming Shows" />
       </Typography>
       <Divider
         sx={{

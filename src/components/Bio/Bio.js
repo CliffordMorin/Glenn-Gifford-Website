@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grow, Paper, Typography, Grid } from "@mui/material";
 
-import Roll from "react-reveal/Roll";
+import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
 import glenn2 from "../../images/glenn2.jpg";
 
@@ -20,9 +20,7 @@ const Bio = () => {
               pt={5}
               gutterBottom
             >
-              <Roll left cascade>
-                Biography
-              </Roll>
+              <Rollin text="Biography" />
             </Typography>
             <Grid container rowSpacing={2} columnSpacing={3}>
               <Grid item xs={12} md={6}>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Paper, Container, Grid } from "@mui/material";
-import Roll from "react-reveal/Roll";
+import Rollin from "../Animations/Rollin";
 import teaching from "../../images/kids.jpg";
 import makeStyles from "./styles";
 
@@ -10,9 +10,7 @@ const Teaching = () => {
     <Container align="center" sx={{ my: 5 }}>
       <Paper elevation={16} sx={{ py: 5, px: 1 }}>
         <Typography sx={{ pb: 5 }} variant="h2" align="center">
-          <Roll left cascade>
-            Teaching
-          </Roll>
+          <Rollin text="Teaching" />
         </Typography>
 
         <Grid container rowSpacing={2} columnSpacing={3}>
@@ -84,9 +82,7 @@ const Teaching = () => {
           </Grid>
         </Grid>
         <Typography sx={{ pb: 5 }} variant="h2" align="center">
-          <Roll left cascade>
-            Testimonials
-          </Roll>
+          <Rollin text="Testimonials" />
         </Typography>
         <Typography
           variant="body1"
