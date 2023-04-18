@@ -1,21 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
+import { useInView } from "react-intersection-observer";
 
-const RollIn = ({ text, delay = 0 }) => {
+const RollIn = ({ text, delay = 200 }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [ref, inView] = useInView({
+    threshold: 0.5, // trigger animation when 50% of the element is in view
+    triggerOnce: true, // only trigger animation once
+  });
 
   const animation = useSpring({
-    transform: isVisible ? "translate3d(0, 0, 0)" : "translate3d(0, 100%, 0)",
-    opacity: isVisible ? 1 : 0,
-    config: { mass: 1, tension: 280, friction: 28 },
+    from: { transform: "translate3d(-100%, 0, 0)", opacity: 0 },
+    to: {
+      transform: isVisible ? "translate3d(0, 0, 0)" : "translate3d(0, 0, 0) ",
+      opacity: isVisible ? 1 : 0,
+    },
+    config: { mass: 1, tension: 100, friction: 10 },
     delay,
   });
 
-  useEffect(() => {
+  if (inView && !isVisible) {
     setIsVisible(true);
-  }, []);
+  }
 
-  return <animated.div style={animation}>{text}</animated.div>;
+  return (
+    <animated.div
+      ref={ref}
+      style={{ display: "inline-block", whiteSpace: "pre" }}
+    >
+      {text.split("").map((char, index) => (
+        <animated.span key={index} style={animation}>
+          {char}
+        </animated.span>
+      ))}
+    </animated.div>
+  );
 };
 
 export default RollIn;

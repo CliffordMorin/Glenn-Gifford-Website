@@ -2,12 +2,21 @@ import React from "react";
 import { Typography, Paper, Container, Grid } from "@mui/material";
 import Rollin from "../Animations/Rollin";
 import teaching from "../../images/kids.jpg";
+import { Helmet } from "react-helmet-async";
 import makeStyles from "./styles";
 
 const Teaching = () => {
   const classes = makeStyles();
   return (
     <Container align="center" sx={{ my: 5 }}>
+      <Helmet>
+        <title>Glenndon Gifford | Teaching</title>
+        <meta
+          name="description"
+          content="Glenndon Gifford's teaching page, where you can learn more about Glenndon's teaching philosophy and how he can help you or your child learn to play the trumpet."
+        />
+        <link rel="canonical" href="/teaching" />
+      </Helmet>
       <Paper elevation={16} sx={{ py: 5, px: 1 }}>
         <Typography sx={{ pb: 5 }} variant="h2" align="center">
           <Rollin text="Teaching" />

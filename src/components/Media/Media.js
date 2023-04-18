@@ -12,6 +12,7 @@ import head4 from "../../images/head4.jpg";
 import makeStyles from "./styles";
 import { Container, Typography } from "@mui/material";
 import Rollin from "../Animations/Rollin";
+import { Helmet } from "react-helmet-async";
 import "./Media.css";
 
 const images = [
@@ -57,6 +58,14 @@ const Media = () => {
   const classes = makeStyles();
   return (
     <div>
+      <Helmet>
+        <title>Glenndon Gifford | Media</title>
+        <meta
+          name="description"
+          content="Glenndon Gifford's Media Page with pictures, videos and recordings of glenndon performing."
+        />
+        <link rel="canonical" href="/media" />
+      </Helmet>
       <Typography align="center" variant="h2" sx={{ my: 5 }}>
         <Rollin text="Media" />
       </Typography>

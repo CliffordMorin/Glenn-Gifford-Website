@@ -4,11 +4,21 @@ import { Container, Grow, Paper, Typography, Grid } from "@mui/material";
 import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
 import glenn2 from "../../images/glenn2.jpg";
+import { Helmet } from "react-helmet-async";
 
 const Bio = () => {
   const classes = makeStyles();
   return (
     <div>
+      <Helmet>
+        <title>Glenndon Gifford | Biography</title>
+        <meta
+          name="description"
+          content=" Glenndon Gifford is a musician, composer, producer, and
+                  educator from Long Island, New York."
+        />
+        <link rel="canonical" href="/bio" />
+      </Helmet>
       <Grow in>
         <Container sx={{ my: 5 }}>
           <Paper elevation={16} sx={{ pb: 5 }}>

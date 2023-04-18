@@ -3,11 +3,17 @@ import { Container, Typography } from "@mui/material";
 
 import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const classes = makeStyles();
   return (
     <div className={classes.container}>
+      <Helmet>
+        <title>Glenndon Gifford | Home</title>
+        <meta name="description" content="Glenndon Gifford's Home Page" />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <Container className={classes.textContainer}>
         <Typography variant="h1">
           <Rollin text="GLENNDON" delay={0} />

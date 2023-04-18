@@ -3,11 +3,20 @@ import { Typography, Container, Paper } from "@mui/material";
 import head from "../../images/head.jpg";
 import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const classes = makeStyles();
   return (
     <div>
+      <Helmet>
+        <title>Glenndon Gifford | Contact</title>
+        <meta
+          name="description"
+          content="Contact form to get in contact with Glenndon Gifford regarding any Inquiries."
+        />
+        <link rel="canonical" href="/contact" />
+      </Helmet>
       <Container align="center" sx={{ my: 5 }}>
         <Paper elevation={16} sx={{ py: 5, px: 1 }}>
           <Typography sx={{ pb: 5 }} variant="h2" align="center">
