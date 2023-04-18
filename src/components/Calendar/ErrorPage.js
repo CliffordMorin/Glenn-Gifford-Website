@@ -32,6 +32,8 @@ const ErrorPage = ({ error }) => {
           <Link
             href="mailto:cliffthedev@gmail.com?subject=Glenndon%20Gifford%20Calendar%20Error"
             target="_blank"
+            sx={{ textDecoration: "none" }}
+            rel="noreferrer"
           >
             <Button
               variant="contained"

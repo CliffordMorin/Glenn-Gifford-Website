@@ -109,6 +109,7 @@ const CalendarV2 = () => {
             <Link
               href={`https://bandsintown.com/artist-subscribe/${ARTIST_ID}?app_id=${API_KEY}&came_from=267&utm_source=public_api&utm_medium=api&utm_campaign=track`}
               target="_blank"
+              sx={{ textDecoration: "none" }}
               rel="noreferrer"
             >
               <Button
