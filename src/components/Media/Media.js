@@ -3,6 +3,10 @@ import ImageGallery from "react-image-gallery";
 import glenn1 from "../../images/glenn1.jpeg";
 import glenn2 from "../../images/glenn2.jpg";
 import glenn3 from "../../images/glenn3.jpg";
+import glenn4 from "../../images/glenn4.jpg";
+import glenn5 from "../../images/glenn5.jpg";
+import glenn6 from "../../images/glenn6.jpg";
+import glenn7 from "../../images/glenn7.jpg";
 import glennTMA from "../../images/glennTMA.jpg";
 import group from "../../images/group.jpg";
 import head from "../../images/head.jpg";
@@ -16,6 +20,22 @@ import { Helmet } from "react-helmet-async";
 import "./Media.css";
 
 const images = [
+  {
+    original: glenn4,
+    thumbnail: glenn4,
+  },
+  {
+    original: glenn5,
+    thumbnail: glenn5,
+  },
+  {
+    original: glenn6,
+    thumbnail: glenn6,
+  },
+  {
+    original: glenn7,
+    thumbnail: glenn7,
+  },
   {
     original: glennTMA,
     thumbnail: glennTMA,

@@ -10,7 +10,7 @@ import {
 
 import Rollin from "../Animations/Rollin";
 import makeStyles from "./styles";
-import glenn2 from "../../images/glenn2.jpg";
+import glenn4Short from "../../images/glenn4Short.jpg";
 import { Helmet } from "react-helmet-async";
 
 const Bio = () => {
@@ -49,7 +49,7 @@ const Bio = () => {
             />
             <Grid container rowSpacing={2} columnSpacing={3}>
               <Grid item xs={12} md={6}>
-                <img className={classes.images} src={glenn2} alt="glenn" />
+                <img className={classes.images} src={glenn4Short} alt="glenn" />
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography
