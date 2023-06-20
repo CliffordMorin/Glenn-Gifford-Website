@@ -149,6 +149,16 @@ const Media = () => {
         <Container align="center" className={classes.video}>
           <iframe
             className={classes.iframe}
+            src="https://www.youtube.com/embed/wkl_j-opNUg"
+            title="Neil Forever"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Container>
+        <Container align="center" className={classes.video}>
+          <iframe
+            className={classes.iframe}
             src="https://www.youtube.com/embed/HyCLW1rUROk"
             title="Look for the silver lining"
             frameborder="0"
