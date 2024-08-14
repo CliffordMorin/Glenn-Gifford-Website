@@ -149,8 +149,18 @@ const Media = () => {
         <Container align="center" className={classes.video}>
           <iframe
             className={classes.iframe}
-            src="https://www.youtube.com/embed/wkl_j-opNUg"
+            src="https://www.youtube.com/embed/Pjy1g85W4ms?si=zIHGwjtfd4wKnJhH"
             title="Neil Forever"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Container>
+        <Container align="center" className={classes.video}>
+          <iframe
+            className={classes.iframe}
+            src="https://www.youtube.com/embed/OqDYcuCTq4M?si=Dc74X522qm7jmck9"
+            title="TMA"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
